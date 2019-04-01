@@ -1,4 +1,3 @@
 # Raytracer
 
-We will present in this repository a simple raytracer build in c++
-
+A simple rayTracer developed as a project for Graphics course at Ecole Centrale Lyon
