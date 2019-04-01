@@ -36,11 +36,8 @@ const int H = W;
 const double fov = 60 * M_PI / 180;
 const double depth = -H/(2*tan(fov*0.5));
 
-const std::string images_directory = "C:/Users/D92979/eclipse-workspace/images/";
-const std::string girl_directory= "C:/Users/D92979/eclipse-workspace/girl/";
-
-//const std::string images_directory = "";
-//const std::string girl_directory= "girl/";
+const std::string images_directory = "";
+const std::string girl_directory= "girl/";
 
 
 //********************************************************************************************
@@ -48,7 +45,7 @@ const std::string girl_directory= "C:/Users/D92979/eclipse-workspace/girl/";
 //********************************************************************************************
 // generateRay prend en entrer un rayon et une distance focale et renvoie un rayon
 // aleatoire autour de ce dernier en respectant la distance focale
-// (si anti_aliasing et profondeur sont activés (voir lignes 26 et 28))
+// (si anti_aliasing et profondeur sont activÃ©s (voir lignes 26 et 28))
 Ray generateRay( Ray principalRay, double distance_focale) {
 
 	Vector origin = principalRay.origin;
@@ -177,7 +174,7 @@ Scene* create_scene(){
 
 	Scene* scene = new Scene(1.,lampe);
 
-	//*************les materiaux utilisés****************
+	//*************les materiaux utilisÃ©s****************
 	Material blue_diffus(Diffus(),Vector(0, 0, 1));
 	Material blanc_diffus(Diffus(),Vector(1, 1, 1));
 	Material rouge_diffus(Diffus(),Vector(1, 0, 0));
@@ -187,7 +184,7 @@ Scene* create_scene(){
 
 	Material transparent(Trans(),1.4);
 
-	//*********ajouter les objets à la la scene************
+	//*********ajouter les objets Ã  la la scene************
 	scene->addSphere(new Sphere(Vector(0, -1000, 0), 990, blue_diffus));//sphere bas
 	scene->addSphere(new Sphere(Vector(0, 1000, 0), 960, blanc_diffus));//sphere haut
 	scene->addSphere(new Sphere(Vector(0, 0, -1000), 940, vert_diffus));//sphere devant
