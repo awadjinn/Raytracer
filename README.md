@@ -5,4 +5,7 @@ A simple rayTracer developed as a project in the computer graphics course at Eco
 ## Link to the course material :
 https://docs.google.com/document/d/1mC6v_Nia0GAjdiiIX-k_z9roJgfaE4fy3Gqx5Jm1D1A/edit?fbclid=IwAR01vKWjZTb_FYsvFeKSeXKzayPVkAqnXvjMISTrpr4UzsVOZLz1criNymg#
 
-[](https://github.com/awadjinn/Raytracer/blob/master/change_focale.gif)
+## Result
+![](https://github.com/awadjinn/Raytracer/blob/master/rendered%20image_500ray.png)
+
+
